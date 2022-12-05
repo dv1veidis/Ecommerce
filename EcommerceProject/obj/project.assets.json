@@ -1128,6 +1128,24 @@
           }
         }
       },
+      "Microsoft.Extensions.Caching.SqlServer/6.0.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Data.SqlClient": "1.0.19249.1",
+          "Microsoft.Extensions.Caching.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.Extensions.Caching.SqlServer.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Caching.SqlServer.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration.Abstractions/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -3525,6 +3543,33 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "EcommerceProject.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "EcommerceProject.Models": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.10",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.10",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10",
+          "Microsoft.Extensions.Caching.SqlServer": "6.0.10"
+        },
+        "compile": {
+          "bin/placeholder/EcommerceProject.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EcommerceProject.DataAccess.dll": {}
+        }
+      },
+      "EcommerceProject.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/EcommerceProject.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EcommerceProject.Models.dll": {}
+        }
       }
     }
   },
@@ -4680,6 +4725,25 @@
         "microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
         "microsoft.extensions.caching.memory.nuspec",
         "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Caching.SqlServer/6.0.10": {
+      "sha512": "1Cpm3mLwS2eyEirT1QIw+gPYF0lyDTk2j08yUhE+xPS7sV/9792ZKzsGgOmIEwzq7hp9UoUcU5TUSkWNYHxVIA==",
+      "type": "package",
+      "path": "microsoft.extensions.caching.sqlserver/6.0.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Caching.SqlServer.dll",
+        "lib/net461/Microsoft.Extensions.Caching.SqlServer.xml",
+        "lib/net6.0/Microsoft.Extensions.Caching.SqlServer.dll",
+        "lib/net6.0/Microsoft.Extensions.Caching.SqlServer.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.SqlServer.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.SqlServer.xml",
+        "microsoft.extensions.caching.sqlserver.6.0.10.nupkg.sha512",
+        "microsoft.extensions.caching.sqlserver.nuspec"
       ]
     },
     "Microsoft.Extensions.Configuration.Abstractions/6.0.0": {
@@ -10007,10 +10071,21 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "EcommerceProject.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../EcommerceProject.DataAccess/EcommerceProject.DataAccess.csproj",
+      "msbuildProject": "../EcommerceProject.DataAccess/EcommerceProject.DataAccess.csproj"
+    },
+    "EcommerceProject.Models/1.0.0": {
+      "type": "project",
+      "path": "../EcommerceProject.Models/EcommerceProject.Models.csproj",
+      "msbuildProject": "../EcommerceProject.Models/EcommerceProject.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "EcommerceProject.DataAccess >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.10",
@@ -10021,19 +10096,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\limes\\.nuget\\packages\\": {}
+    "C:\\Users\\limes\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\limes\\source\\repos\\EcommerceProject\\EcommerceProject\\EcommerceProject.csproj",
+      "projectUniqueName": "C:\\Users\\limes\\OneDrive\\Dokumentai\\GitHub\\Ecommerce\\EcommerceProject\\EcommerceProject.csproj",
       "projectName": "EcommerceProject",
-      "projectPath": "C:\\Users\\limes\\source\\repos\\EcommerceProject\\EcommerceProject\\EcommerceProject.csproj",
+      "projectPath": "C:\\Users\\limes\\OneDrive\\Dokumentai\\GitHub\\Ecommerce\\EcommerceProject\\EcommerceProject.csproj",
       "packagesPath": "C:\\Users\\limes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\limes\\source\\repos\\EcommerceProject\\EcommerceProject\\obj\\",
+      "outputPath": "C:\\Users\\limes\\OneDrive\\Dokumentai\\GitHub\\Ecommerce\\EcommerceProject\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\limes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10041,12 +10121,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\limes\\OneDrive\\Dokumentai\\GitHub\\Ecommerce\\EcommerceProject.DataAccess\\EcommerceProject.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\limes\\OneDrive\\Dokumentai\\GitHub\\Ecommerce\\EcommerceProject.DataAccess\\EcommerceProject.DataAccess.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -10109,7 +10194,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

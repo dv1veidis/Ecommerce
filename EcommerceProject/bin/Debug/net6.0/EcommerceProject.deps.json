@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "EcommerceProject/1.0.0": {
         "dependencies": {
+          "EcommerceProject.DataAccess": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.10",
@@ -961,6 +962,19 @@
           "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.222.6406"
+          }
+        }
+      },
+      "Microsoft.Extensions.Caching.SqlServer/6.0.10": {
+        "dependencies": {
+          "Microsoft.Data.SqlClient": "2.1.4",
+          "Microsoft.Extensions.Caching.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Caching.SqlServer.dll": {
+            "assemblyVersion": "6.0.10.0",
+            "fileVersion": "6.0.1022.47617"
           }
         }
       },
@@ -2286,6 +2300,23 @@
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
         }
+      },
+      "EcommerceProject.DataAccess/1.0.0": {
+        "dependencies": {
+          "EcommerceProject.Models": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.10",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.10",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10",
+          "Microsoft.Extensions.Caching.SqlServer": "6.0.10"
+        },
+        "runtime": {
+          "EcommerceProject.DataAccess.dll": {}
+        }
+      },
+      "EcommerceProject.Models/1.0.0": {
+        "runtime": {
+          "EcommerceProject.Models.dll": {}
+        }
       }
     }
   },
@@ -2553,6 +2584,13 @@
       "sha512": "sha512-B4y+Cev05eMcjf1na0v9gza6GUtahXbtY1JCypIgx3B4Ea/KAgsWyXEmW4q6zMbmTMtKzmPVk09rvFJirvMwTg==",
       "path": "microsoft.extensions.caching.memory/6.0.1",
       "hashPath": "microsoft.extensions.caching.memory.6.0.1.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Caching.SqlServer/6.0.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1Cpm3mLwS2eyEirT1QIw+gPYF0lyDTk2j08yUhE+xPS7sV/9792ZKzsGgOmIEwzq7hp9UoUcU5TUSkWNYHxVIA==",
+      "path": "microsoft.extensions.caching.sqlserver/6.0.10",
+      "hashPath": "microsoft.extensions.caching.sqlserver.6.0.10.nupkg.sha512"
     },
     "Microsoft.Extensions.Configuration.Abstractions/6.0.0": {
       "type": "package",
@@ -3519,6 +3557,16 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
+    },
+    "EcommerceProject.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EcommerceProject.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

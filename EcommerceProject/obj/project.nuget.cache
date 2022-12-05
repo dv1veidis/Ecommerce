@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bVOV9E4vWLxUmHQH1+KQUMBYUu0eWAG1h42YhxNS+F/quifIs5QtT5wjIpwaNzJyCL2ZFbMbIFFOllJgr2Kgyw==",
+  "dgSpecHash": "ng9C51Xqybpu/aya2rbxSUR9k3E7/XJ1TKhH6WaxvoSlJzASjjvuUyLC71BnQGkc3At1KwJq/yY8j4dzEKQhmg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\limes\\source\\repos\\EcommerceProject\\EcommerceProject\\EcommerceProject.csproj",
+  "projectFilePath": "C:\\Users\\limes\\OneDrive\\Dokumentai\\GitHub\\Ecommerce\\EcommerceProject\\EcommerceProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\limes\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\limes\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
@@ -41,6 +41,7 @@
     "C:\\Users\\limes\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.10\\microsoft.entityframeworkcore.tools.6.0.10.nupkg.sha512",
     "C:\\Users\\limes\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\limes\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
+    "C:\\Users\\limes\\.nuget\\packages\\microsoft.extensions.caching.sqlserver\\6.0.10\\microsoft.extensions.caching.sqlserver.6.0.10.nupkg.sha512",
     "C:\\Users\\limes\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\limes\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.1\\microsoft.extensions.dependencyinjection.6.0.1.nupkg.sha512",
     "C:\\Users\\limes\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
