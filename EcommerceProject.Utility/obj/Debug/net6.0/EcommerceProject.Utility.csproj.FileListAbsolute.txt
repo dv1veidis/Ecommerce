@@ -10,3 +10,15 @@ C:\Users\limes\OneDrive\Dokumentai\GitHub\Ecommerce\EcommerceProject.Utility\obj
 C:\Users\limes\OneDrive\Dokumentai\GitHub\Ecommerce\EcommerceProject.Utility\obj\Debug\net6.0\refint\EcommerceProject.Utility.dll
 C:\Users\limes\OneDrive\Dokumentai\GitHub\Ecommerce\EcommerceProject.Utility\obj\Debug\net6.0\EcommerceProject.Utility.pdb
 C:\Users\limes\OneDrive\Dokumentai\GitHub\Ecommerce\EcommerceProject.Utility\obj\Debug\net6.0\ref\EcommerceProject.Utility.dll
+C:\Users\limes\Documents\GitHub\Ecommerce\EcommerceProject.Utility\bin\Debug\net6.0\EcommerceProject.Utility.deps.json
+C:\Users\limes\Documents\GitHub\Ecommerce\EcommerceProject.Utility\bin\Debug\net6.0\EcommerceProject.Utility.dll
+C:\Users\limes\Documents\GitHub\Ecommerce\EcommerceProject.Utility\bin\Debug\net6.0\EcommerceProject.Utility.pdb
+C:\Users\limes\Documents\GitHub\Ecommerce\EcommerceProject.Utility\obj\Debug\net6.0\EcommerceProject.Utility.csproj.AssemblyReference.cache
+C:\Users\limes\Documents\GitHub\Ecommerce\EcommerceProject.Utility\obj\Debug\net6.0\EcommerceProject.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\limes\Documents\GitHub\Ecommerce\EcommerceProject.Utility\obj\Debug\net6.0\EcommerceProject.Utility.AssemblyInfoInputs.cache
+C:\Users\limes\Documents\GitHub\Ecommerce\EcommerceProject.Utility\obj\Debug\net6.0\EcommerceProject.Utility.AssemblyInfo.cs
+C:\Users\limes\Documents\GitHub\Ecommerce\EcommerceProject.Utility\obj\Debug\net6.0\EcommerceProject.Utility.csproj.CoreCompileInputs.cache
+C:\Users\limes\Documents\GitHub\Ecommerce\EcommerceProject.Utility\obj\Debug\net6.0\EcommerceProject.Utility.dll
+C:\Users\limes\Documents\GitHub\Ecommerce\EcommerceProject.Utility\obj\Debug\net6.0\refint\EcommerceProject.Utility.dll
+C:\Users\limes\Documents\GitHub\Ecommerce\EcommerceProject.Utility\obj\Debug\net6.0\EcommerceProject.Utility.pdb
+C:\Users\limes\Documents\GitHub\Ecommerce\EcommerceProject.Utility\obj\Debug\net6.0\ref\EcommerceProject.Utility.dll

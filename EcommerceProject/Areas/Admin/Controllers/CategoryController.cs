@@ -1,23 +1,23 @@
-﻿
-using EcommerceProject.DataAccess;
+﻿using EcommerceProject.DataAccess;
 using EcommerceProject.DataAccess.Repository.IRepository;
 using EcommerceProject.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace EcommerceProject.Controllers
+namespace EcommerceProject.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class CategoryController : Controller
     {
-        private readonly ICategoryRepository _db;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public CategoryController(ICategoryRepository db)
+        public CategoryController(IUnitOfWork unitOfWork)
         {
-            _db = db;
+            _unitOfWork = unitOfWork;
         }
 
         public IActionResult Index()
         {
-            IEnumerable<Category> objCategoryList = _db.GetAll();
+            IEnumerable<Category> objCategoryList = _unitOfWork.Category.GetAll();
             return View(objCategoryList);
         }
 
@@ -33,14 +33,14 @@ namespace EcommerceProject.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(Category obj)
         {
-            if(obj.Name == obj.DisplayOrder.ToString())
+            if (obj.Name == obj.DisplayOrder.ToString())
             {
                 ModelState.AddModelError("name", "The DisplayOrder cannot exactly match the Name.");
             }
             if (ModelState.IsValid)
             {
-                _db.Add(obj);
-                _db.Save();
+                _unitOfWork.Category.Add(obj);
+                _unitOfWork.Save();
                 TempData["success"] = "Category created successfully";
                 return RedirectToAction("Index");
             }
@@ -49,13 +49,13 @@ namespace EcommerceProject.Controllers
         //GET
         public IActionResult Edit(int? id)
         {
-            if(id == null || id==0)
+            if (id == null || id == 0)
             {
                 return NotFound();
             }
-            var categoryFromDbFirst = _db.GetFirstOrDefault(u=>u.Id==id);
+            var categoryFromDbFirst = _unitOfWork.Category.GetFirstOrDefault(u => u.Id == id);
 
-            if(categoryFromDbFirst==null)
+            if (categoryFromDbFirst == null)
             {
                 return NotFound();
             }
@@ -74,8 +74,8 @@ namespace EcommerceProject.Controllers
             }
             if (ModelState.IsValid)
             {
-                _db.Update(obj);
-                _db.Save();
+                _unitOfWork.Category.Update(obj);
+                _unitOfWork.Save();
                 TempData["success"] = "Category edited successfully";
                 return RedirectToAction("Index");
             }
@@ -89,7 +89,7 @@ namespace EcommerceProject.Controllers
             {
                 return NotFound();
             }
-            var categoryFromDb = _db.GetFirstOrDefault(u => u.Id == id);
+            var categoryFromDb = _unitOfWork.Category.GetFirstOrDefault(u => u.Id == id);
 
 
             if (categoryFromDb == null)
@@ -105,9 +105,9 @@ namespace EcommerceProject.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult DeletePOST(int? id)
         {
-            var obj = _db.GetFirstOrDefault(u => u.Id == id);
-            _db.Remove(obj);
-            _db.Save();
+            var obj = _unitOfWork.Category.GetFirstOrDefault(u => u.Id == id);
+            _unitOfWork.Category.Remove(obj);
+            _unitOfWork.Save();
             TempData["success"] = "Category deleted successfully";
             return RedirectToAction("Index");
         }
