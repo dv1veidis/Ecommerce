@@ -23,4 +23,8 @@
     <ProjectReference Include="..\EcommerceProject.DataAccess\EcommerceProject.DataAccess.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\images\products\" />
+  </ItemGroup>
+
 </Project>
